@@ -5,7 +5,7 @@ import GameService from "../services/GameService.js"
 let _cheeseElem = document.getElementById("cheese")
 
 function _draw() {
-	// _cheeseElem.innerText = store.State.cheese.toFixed(0)
+	_cheeseElem.innerText = store.State.cheese.toFixed(0)
 	console.log(`cheese: ${store.State.cheese}`)
 }
 
