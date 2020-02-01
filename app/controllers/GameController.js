@@ -11,11 +11,25 @@ function _draw() {
 
 // PUBLIC
 export default class GameController {
+	// TODO Delete this
+	stateCheck() {
+		return store.State
+	}
 
 	mine() {
 		console.log("Mining!")
 		GameService.updateCheese()
 		_draw()
+	}
+
+	buyUpgrade(upgradeName) {
+		try {
+			GameService.buyUpgrade(upgradeName)
+			console.log(`You got one ${upgradeName}!`);
+
+		} catch (error) {
+			console.error(error)
+		}
 	}
 
 }
