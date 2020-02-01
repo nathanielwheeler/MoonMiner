@@ -1,9 +1,8 @@
+import upgrade from "./models/Upgrade.js"
+
 let _state = {
 	cheese: 0
 }
-
-console.log(`You have ${_state.cheese} cheese!`);
-
 
 class Store {
 	get State() {

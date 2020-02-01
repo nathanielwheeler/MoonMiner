@@ -3,3 +3,10 @@ html, body {
 	background: black;
 	font-family: fantasy;
 }
+.btn {
+	margin: 10px;
+	border-radius: 0;
+}
+.card {
+	border-radius: 0;
+}
